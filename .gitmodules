@@ -1,3 +1,9 @@
 [submodule "cJSON"]
 	path = cJSON
 	url = https://github.com/DaveGamble/cJSON
+[submodule "sigfn"]
+	path = sigfn
+	url = https://github.com/maxtek6/sigfn
+[submodule "libevent"]
+	path = libevent
+	url = https://github.com/libevent/libevent

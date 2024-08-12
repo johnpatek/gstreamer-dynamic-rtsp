@@ -8,6 +8,14 @@ option(ENABLE_CJSON_TEST "" OFF)
 option(BUILD_SHARED_AND_STATIC_LIBS "" ON)
 add_subdirectory(cJSON)
 
+option(EVENT__DISABLE_BENCHMARK"" OFF)
+option(EVENT__DISABLE_TESTS "" OFF)
+option(EVENT__DISABLE_REGRESS "" OFF)
+option(EVENT__DISABLE_SAMPLES "" OFF)
+add_subdirectory(libevent)
+
+add_subdirectory(sigfn)
+
 if(WIN32)
 find_package(SDL REQUIRED)
 set(SDL_LIBS SDL::SDL)
